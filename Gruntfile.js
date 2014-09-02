@@ -99,7 +99,7 @@ module.exports = function( grunt ) {
 
 						if ( src ) {
 							element.attr( "src", src
-								.replace( /_assets\/js\/?$/, "_assets/js/index.js" )
+								.replace( /assets\/js\/?$/, "assets/js/index.js" )
 								.replace( /\.\.\/external\/jquery\/jquery.js$/,
 									"js/jquery.js" )
 								.replace( /\.\.\/js\/?$/,
@@ -406,8 +406,8 @@ module.exports = function( grunt ) {
 				dest: path.join( dist, name ) + "<%= versionSuffix %>.js"
 			},
 			demos: {
-				src: [ "demos/_assets/js/*.js" ],
-				dest: path.join( dist, "demos/_assets/js/index.js" )
+				src: [ "demos/assets/js/*.js" ],
+				dest: path.join( dist, "demos/assets/js/index.js" )
 			}
 		},
 

@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Búsquedas - Guia HABILMIND</title>
 	<link rel="stylesheet" href="../../css/themes/default/jquery.mobile.css">
-	<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
-	<link rel="shortcut icon" href="../_assets/favicon.ico">
+	<link rel="stylesheet" href="../assets/css/jqm-demos.css">
+	<link rel="shortcut icon" href="../assets/favicon.ico">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<script src="../../external/jquery/jquery.js"></script>
-	<script src="../_assets/js/"></script>
+	<script src="../assets/js/"></script>
 	<script src="../../js/"></script>
 
 </head>
@@ -17,7 +17,7 @@
 <div data-role="page" class="jqm-demos jqm-demos-index jqm-demos-search-results">
 
 	<div data-role="header" class="jqm-header">
-		<h2><a href="../" title="jQuery Mobile Demos home"><img src="../_assets/img/jquery-logo.png" alt="jQuery Mobile"></a></h2>
+		<h2><a href="../" title="jQuery Mobile Demos home"><img src="../assets/img/jquery-logo.png" alt="jQuery Mobile"></a></h2>
 		<p><span class="jqm-version"></span> Demos</p>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>

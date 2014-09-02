@@ -3,10 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Classic theme - jQuery Mobile Demos</title>
-	<link rel="stylesheet" href="../../css/themes/default/jquery.mobile.icons.css">
-	<link rel="stylesheet" href="theme-classic.css">
-	<link rel="stylesheet" href="../../css/structure/jquery.mobile.structure.css">
+	<title>Default theme - jQuery Mobile Demos</title>
+	<link rel="stylesheet" href="../../css/themes/default/jquery.mobile.css">
 	<link rel="shortcut icon" href="../favicon.ico">
 	<script src="../../external/jquery/jquery.js"></script>
 	<script src="../../js/"></script>
@@ -15,20 +13,11 @@
 			$( "#theme-selector input" ).on( "change", function( event ) {
 				var themeClass = $( "#theme-selector input:checked" ).attr( "id" );
 
-				$( "#testpage" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e" ).addClass( "ui-page-theme-" + themeClass );
-				$( "#ui-body-test" ).removeClass( "ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e" ).addClass( "ui-body-" + themeClass );
-				$( "#ui-bar-test, #ui-bar-form" ).removeClass( "ui-bar-a ui-bar-b ui-bar-c ui-bar-d ui-bar-e" ).addClass( "ui-bar-" + themeClass );
-				$( ".ui-collapsible-content" ).removeClass( "ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e" ).addClass( "ui-body-" + themeClass );
+				$( "#testpage" ).removeClass( "ui-page-theme-a ui-page-theme-b" ).addClass( "ui-page-theme-" + themeClass );
+				$( "#ui-body-test" ).removeClass( "ui-body-a ui-body-b" ).addClass( "ui-body-" + themeClass );
+				$( "#ui-bar-test, #ui-bar-form" ).removeClass( "ui-bar-a ui-bar-b" ).addClass( "ui-bar-" + themeClass );
+				$( ".ui-collapsible-content" ).removeClass( "ui-body-a ui-body-b" ).addClass( "ui-body-" + themeClass );
 				$( ".theme" ).text( themeClass );
-			});
-			$( "#opt-navbars input" ).on( "change", function( event ) {
-				if ( $( "#show" ).prop( "checked" ) ) {
-					$( "#testpage .ui-navbar" ).show();
-					$( "#testpage .ui-footer h4" ).hide();
-				} else if ( $( "#hide" ).prop( "checked" ) ) {
-					$( "#testpage .ui-navbar" ).hide();
-					$( "#testpage .ui-footer h4" ).show();
-				}
 			});
 			$( "#opt-shadow input" ).on( "change", function( event ) {
 				if ( $( "#on" ).prop( "checked" ) ) {
@@ -44,18 +33,13 @@
 					$( "#testpage" ).addClass( "ui-shadow-icon" );
 				}
 			});
-			$( "#opt-gradient input" ).on( "change", function( event ) {
-				if ( $( "#off2" ).prop( "checked" ) ) {
-					$( "#testpage" ).addClass( "nogradient" );
-				} else if ( $( "#on2" ).prop( "checked" ) ) {
-					$( "#testpage" ).removeClass( "nogradient" );
-				}
-			});
-			$( "#opt-highlight input" ).on( "change", function( event ) {
-				if ( $( "#off3" ).prop( "checked" ) ) {
-					$( "#testpage" ).addClass( "nohighlight" );
-				} else if ( $( "#on3" ).prop( "checked" ) ) {
-					$( "#testpage" ).removeClass( "nohighlight" );
+			$( "#opt-navbars input" ).on( "change", function( event ) {
+				if ( $( "#show" ).prop( "checked" ) ) {
+					$( "#testpage .ui-navbar" ).show();
+					$( "#testpage .ui-footer h4" ).hide();
+				} else if ( $( "#hide" ).prop( "checked" ) ) {
+					$( "#testpage .ui-navbar" ).hide();
+					$( "#testpage .ui-footer h4" ).show();
 				}
 			});
 		});
@@ -66,13 +50,6 @@
 			-moz-box-shadow: none !important;
 			box-shadow: none !important;
 		}
-		.nogradient,
-		.nogradient * {
-			background-image: none !important;
-		}
-		.nohighlight .ui-btn:before {
-			display: none !important;
-		}
 		form.ui-mini .ui-field-contain fieldset.ui-controlgroup legend small {
 			color: #666;
 		}
@@ -82,9 +59,9 @@
 <div data-role="page" id="testpage">
 
 	<div data-role="header">
-		<h1>Classic theme</h1>
-		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-notext">Back</a>
-		<a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-left">Button</a>
+		<h1>Default theme <a href="http://api.jquerymobile.com/theme/" class="jqm-api-docs-link ui-btn ui-btn-icon-right ui-icon-carat-r ui-nodisc-icon ui-alt-icon ui-btn-inline ui-corner-all ui-mini">API</a></h1>
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-gear">Button</a>
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#" class="ui-btn-active ui-state-persist">Menu item 1</a></li>
@@ -96,10 +73,6 @@
 
 	<div class="ui-content" role="main">
 
-		<p>This "classic" theme mimics the old jQuery Mobile default theme. IMPORTANT: This classic theme is only a demo and not a supported feature. Issues or ThemeRoller incompatibility might not be fixed, this theme is not available on the CDN, and this demo can be removed at any time.</p>
-
-		<p><a href="theme-classic.css" target="_blank">Open the classic theme CSS file in a new tab</a></p>
-
 		<form class="ui-mini">
 			<div class="ui-field-contain" id="theme-selector">
 				<fieldset data-role="controlgroup" data-type="horizontal">
@@ -108,12 +81,6 @@
 					<input type="radio" name="theme" id="a" checked>
 					<label for="b">B</label>
 					<input type="radio" name="theme" id="b">
-					<label for="c">C</label>
-					<input type="radio" name="theme" id="c">
-					<label for="d">D</label>
-					<input type="radio" name="theme" id="d">
-					<label for="e">E</label>
-					<input type="radio" name="theme" id="e">
 				</fieldset>
 			</div>
 			<div class="ui-field-contain" id="opt-navbars">
@@ -143,24 +110,6 @@
 					<input type="radio" name="iconshadow" id="off1" checked>
 				</fieldset>
 			</div>
-			<div class="ui-field-contain" id="opt-gradient">
-				<fieldset data-role="controlgroup" data-type="horizontal">
-					<legend>Gradient:<br><small>Off: remove background-image rules from classic theme CSS</small></legend>
-					<label for="on2">On</label>
-					<input type="radio" name="gradient" id="on2" checked>
-					<label for="off2">Off</label>
-					<input type="radio" name="gradient" id="off2">
-				</fieldset>
-			</div>
-			<div class="ui-field-contain" id="opt-highlight">
-				<fieldset data-role="controlgroup" data-type="horizontal">
-					<legend>Highlight:<br><small>Off: remove .ui-btn:before rule from classic theme CSS</small></legend>
-					<label for="on3">On</label>
-					<input type="radio" name="highlight" id="on3" checked>
-					<label for="off3">Off</label>
-					<input type="radio" name="highlight" id="off3">
-				</fieldset>
-			</div>
 		</form>
 
 		<div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom:1em;">
@@ -180,35 +129,35 @@
 		<button class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-carat-r ui-btn-icon-right">are</button>
 		<input type="button" value="buttons" data-inline="true" data-icon="carat-r" data-iconpos="right">
 
-		<ul data-role="listview" data-inset="true" data-counttheme="c">
+		<ul data-role="listview" data-inset="true">
 			<li>I</li>
-			<li data-role="list-divider" data-theme="b">Divider<span class="ui-li-count">3</span></li>
+			<li data-role="list-divider">Divider<span class="ui-li-count">3</span></li>
 			<li>am</li>
 			<li>static<span class="ui-li-count">6</span></li>
 		</ul>
 
-		<ul data-role="listview" data-inset="true" data-counttheme="c">
+		<ul data-role="listview" data-inset="true">
 			<li><a href="#">We</a></li>
-			<li data-role="list-divider" data-theme="b">Divider</li>
+			<li data-role="list-divider">Divider</li>
 			<li><a href="#">have<span class="ui-li-count">4</span></a></li>
 			<li><a href="#">links</a></li>
 		</ul>
 
 		<ul data-role="listview" data-split-icon="gear" data-inset="true">
 			<li><a href="#">
-				<img src="../_assets/img/album-bb.jpg">
+				<img src="../assets/img/album-bb.jpg">
 			<h2>Broken Bells</h2>
 			<p>Broken Bells</p></a>
 				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
 			</li>
 			<li><a href="#">
-				<img src="../_assets/img/album-hc.jpg">
+				<img src="../assets/img/album-hc.jpg">
 			<h2>Warning</h2>
 			<p>Hot Chip</p></a>
 				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
 			</li>
 			<li><a href="#">
-				<img src="../_assets/img/album-bb.jpg">
+				<img src="../assets/img/album-bb.jpg">
 			<h2>Wolfgang Amadeus Phoenix</h2>
 			<p>Phoenix</p></a>
 				<a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>

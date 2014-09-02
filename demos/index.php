@@ -6,17 +6,17 @@
 	<title>Guías de aplicación HABILMIND</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="../css/themes/default/jquery.mobile.css">
-	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<link rel="stylesheet" href="assets/css/jqm-demos.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<script src="../external/jquery/jquery.js"></script>
-	<script src="_assets/js/"></script>
+	<script src="assets/js/"></script>
 	<script src="../js/"></script>
 </head>
 <body>
 <div data-role="page" class="jqm-demos jqm-home">
 
 	<div data-role="header" class="jqm-header">
-		<h2><img src="_assets/img/logo-habilmind171x90.png" alt="Habilmind"></h2>
+		<h2><img src="assets/img/logo-habilmind171x90.png" alt="Habilmind"></h2>
 		<p>Version <span class="jqm-version"></span></p>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
@@ -39,7 +39,7 @@
         <p><strong>Joaquín Arias</strong> - CEO Habilmind</p>
         
 
-		<img src="_assets/img/capturas-portada.jpeg">
+		<img src="assets/img/capturas-portada.jpeg">
 
 		<p>¿nuevo con jQuery Mobile? Usa la <a target="_blank" data-ajax="false" href="http://view.jquerymobile.com/master/demos/">aplicación demo</a> para ver todos los ejemplos y posibilidades.</p>
 
