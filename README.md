@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # jQuery Mobile [![Build Status](https://travis-ci.org/jquery/jquery-mobile.svg?branch=master)](https://travis-ci.org/jquery/jquery-mobile) [![Coverage Status](http://img.shields.io/coveralls/jquery/jquery-mobile/master.svg)](https://coveralls.io/r/jquery/jquery-mobile?branch=master)
 
 This is the main repository for the jQuery Mobile project. From the [official website](http://jquerymobile.com):
@@ -131,3 +132,9 @@ Additionally, jQuery Mobile's test suite is split between integration and unit t
     grunt test --types=unit
     grunt test --types=integration
     grunt test --types=unit,integration # default, equivalent to 'grunt test'
+=======
+guiahabilmind
+=============
+
+Guía de aplicación de los servicios que ofrece Habilmind
+>>>>>>> 0955788e0d37d72e2dcd125dba6efa988e9ad2e2
