@@ -24,3 +24,6 @@ _tests/
 
 # phantom junit output
 build/test-results/
+
+# PhpStorm
+.idea/

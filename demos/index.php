@@ -16,7 +16,7 @@
 <div data-role="page" class="jqm-demos jqm-home">
 
 	<div data-role="header" class="jqm-header">
-		<h2><img src="_assets/img/jquery-logo.png" alt="jQuery Mobile"></h2>
+		<h2><img src="_assets/img/logo-habilmind171x90.png" alt="Habilmind"></h2>
 		<p>Version <span class="jqm-version"></span></p>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
@@ -24,23 +24,34 @@
 
 	<div role="main" class="ui-content jqm-content">
 
-		<h1>Demos</h1>
+		<h1>Guía de aplicación de Habilmind</h1>
 
-		<p><strong>jQuery Mobile is a touch-optimized HTML5 UI framework designed to make responsive web sites and apps that are accessible on all smartphone, tablet and desktop devices.</strong></p>
+        <p>Desde esta aplicación podrás:</p>
 
-		<img src="_assets/img/devices.png">
+        <ul>
+            <li>Disponer de un asistente en la aplicación de pruebas con tus alumnos.</li>
+            <li>Saber qué hacer en caso de posibles incidencias.</li>
+            <li>Contactar directamente con Habilmind en caso de necesitar soporte.</li>
+        </ul>
+
+        <p>Estamos para ayudarte,</p>
+
+        <p><strong>Joaquín Arias</strong> - CEO Habilmind</p>
+        
+
+		<img src="_assets/img/capturas-portada.jpeg">
 
 		<p>New to jQuery Mobile? Get started by reading this <a href="intro/" data-ajax="false">introduction</a>. For technical info, visit the <a href="http://api.jquerymobile.com" title="jQuery Mobile API documentation" target="_blank">API documentation</a>. Downloads and info about the project can be found on <a href="http://jquerymobile.com" title="jQuery Mobile web site" target="_blank">jquerymobile.com</a>.</p>
 
         <div class="ui-grid-a ui-responsive">
         	<div class="ui-block-a">
         		<div class="jqm-block-content">
-        			<h3>Pages &amp; Navigation</h3>
+        			<h3>Diagnósticos de Habilidades</h3>
 
-        			<p><a href="pages/" data-ajax="false">Pages</a></p>
-        			<p><a href="navigation/" data-ajax="false">Navigation</a></p>
-        			<p><a href="loader/" data-ajax="false">Loader</a></p>
-        			<p><a href="transitions/" data-ajax="false">Transitions</a></p>
+        			<p><a href="pages/" data-ajax="false">Habilidades General</a> <i>(22 habs.)</i></p>
+        			<p><a href="navigation/" data-ajax="false">Habilidades Infantil</a> <i>(11 habs.)</i></p>
+        			<p><a href="loader/" data-ajax="false">Habilidades Fundamentales</a> <i>(9 habs.)</i></p>
+        			<p><a href="transitions/" data-ajax="false">Habilidades Fundamentales Infantil</a> <i>(7 habs.)</i></p>
         		</div>
         	</div>
         	<div class="ui-block-b">
@@ -56,7 +67,7 @@
         	</div>        	
         	<div class="ui-block-a">
         		<div class="jqm-block-content">
-        			<h3>Widgets</h3>
+        			<h3>¿necesitas más ayuda?</h3>
 
         			<p><a href="toolbar/" data-ajax="false">Toolbar</a>, <a href="navbar/" data-ajax="false">Navbar</a></p>
         			<p><a href="tabs/" data-ajax="false">Tabs</a>, <a href="panel/" data-ajax="false">Panel</a>, <a href="popup/" data-ajax="false">Popup</a></p>
@@ -68,7 +79,7 @@
         	</div>
         	<div class="ui-block-b">
         		<div class="jqm-block-content">
-        			<h3>Form widgets</h3>
+        			<h3>¡Síguenos!</h3>
 
         			<p><a href="checkboxradio-checkbox/" data-ajax="false">Checkboxes</a>, <a href="checkboxradio-radio/" data-ajax="false">Radio buttons</a></p>
         			<p><a href="selectmenu/" data-ajax="false">Selectmenu</a>, <a href="selectmenu-custom/" data-ajax="false">Custom menu</a></p>
