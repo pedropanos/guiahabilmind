@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>¿incidencias? - Guía de aplicación HABILMIND</title>
-		<link rel="stylesheet" href="../../css/themes/default/jquery.mobile.css">
-		<link rel="stylesheet" href="../_assets/css/jqm-demos.css">
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-		<script src="../../external/jquery/jquery.js"></script>
-		<script src="../_assets/js/"></script>
-		<script src="../../js/"></script>
+    <head>
+	    <title>¿incidencias? - Guía de aplicación HABILMIND</title>
+
+        <?php include( '../jqm-generic-css-js.php' ); ?>
+
 	</head>
-	<body>
-
-
-
+<body>
 	<div data-role="page" class="jqm-demos" data-quicklinks="true" id="page-principal">
 
-        <?php require_once( '../jqm-pageheader.php' ); ?>
+        <?php include( '../jqm-pageheader.php' ); ?>
 
         <div role="main" class="ui-content jqm-content">
 
@@ -43,6 +34,7 @@
 
 
     <div data-role="page" class="jqm-demos" data-quicklinks="true" id="incidencia1">
+
         <?php include( '../jqm-pageheader.php' ); ?>
 
         <div role="main" class="ui-content jqm-content">
@@ -62,6 +54,7 @@
     
 
     <div data-role="page" class="jqm-demos" data-quicklinks="true" id="incidencia2">
+
         <?php include( '../jqm-pageheader.php' ); ?>
 
         <div role="main" class="ui-content jqm-content">
@@ -82,6 +75,7 @@
     
 
     <div data-role="page" class="jqm-demos" data-quicklinks="true" id="incidencia3">
+
         <?php include( '../jqm-pageheader.php' ); ?>
 
         <div role="main" class="ui-content jqm-content">
@@ -100,6 +94,7 @@
 
 
     <div data-role="page" class="jqm-demos" data-quicklinks="true" id="incidencia4">
+
         <?php require_once( '../jqm-pageheader.php' ); ?>
 
         <div role="main" class="ui-content jqm-content">

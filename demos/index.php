@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile Demos</title>
+	<title>Guías de aplicación HABILMIND</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="../css/themes/default/jquery.mobile.css">
 	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
@@ -41,7 +41,7 @@
 
 		<img src="_assets/img/capturas-portada.jpeg">
 
-		<p>New to jQuery Mobile? Get started by reading this <a href="intro/" data-ajax="false">introduction</a>. For technical info, visit the <a href="http://api.jquerymobile.com" title="jQuery Mobile API documentation" target="_blank">API documentation</a>. Downloads and info about the project can be found on <a href="http://jquerymobile.com" title="jQuery Mobile web site" target="_blank">jquerymobile.com</a>.</p>
+		<p>¿nuevo con jQuery Mobile? Usa la <a target="_blank" data-ajax="false" href="http://view.jquerymobile.com/master/demos/">aplicación demo</a> para ver todos los ejemplos y posibilidades.</p>
 
         <div class="ui-grid-a ui-responsive">
         	<div class="ui-block-a">

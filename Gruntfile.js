@@ -79,7 +79,7 @@ module.exports = function( grunt ) {
 						// If we've already handled the nested includes use the version
 						// that was copied to the dist folder
 						// TODO use the config from copy:demos.nested.files
-						if( includePath.match(/jqm\-(contents|navmenu|search)\.php/) ) {
+						if( includePath.match(/jqm\-(contents|navmenu|search|pageheader)\.php/) ) {
 							newSrcPath = "dist/" + newSrcPath;
 						}
 
@@ -494,7 +494,8 @@ module.exports = function( grunt ) {
 						src: [
 							"demos/jqm-contents.php",
 							"demos/jqm-navmenu.php",
-							"demos/jqm-search.php"
+							"demos/jqm-search.php",
+                            "demos/jqm-pageheader.php"
 						],
 						dest: dist
 					}
